@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Змейка</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Змейка</h1>
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-label">Счёт</span>
+          <span class="stat-value" id="score">0</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Рекорд</span>
+          <span class="stat-value" id="high-score">0</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="game-area">
+      <canvas id="game" width="400" height="400" aria-label="Игровое поле змейки"></canvas>
+
+      <div class="overlay" id="overlay">
+        <div class="overlay-content">
+          <h2 id="overlay-title">Змейка</h2>
+          <p id="overlay-message">Нажмите пробел или кнопку, чтобы начать</p>
+          <button id="start-btn" type="button">Играть</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="controls">
+      <p class="hint">Управление: <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> или <kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd></p>
+      <p class="hint">Пауза: <kbd>Пробел</kbd></p>
+    </footer>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
